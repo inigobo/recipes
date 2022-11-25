@@ -1,0 +1,9 @@
+.detailPic{
+    width: 18em;
+}
+
+.mealDetailDesign{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

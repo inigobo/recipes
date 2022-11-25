@@ -1,6 +1,7 @@
 import React from "react";
 import { bringRandomRecipe } from "../../services/apiCalls";
-
+import { useState, useEffect } from "react";
+import MealDetail from "../../components/MealDetail/MealDetail";
 const MealShowcase = () => {
     const [recipes, setRecipes] = useState([]);
 
@@ -28,6 +29,7 @@ const MealShowcase = () => {
             }
         }
     }, [recipes])
+    console.log(recipes);
 
     return (
         <div className='showcaseDesign'>
@@ -39,7 +41,8 @@ const MealShowcase = () => {
                         recipe => {
                             return (
 
-                                <MealCard value={recipe} key={recipe.id} />
+                                <MealDetail value={recipe} key={recipe.id} />
+                
 
                             )
                         }
