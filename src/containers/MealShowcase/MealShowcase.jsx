@@ -4,8 +4,8 @@ import { useState, useEffect } from "react";
 import MealDetail from "../../components/MealDetail/MealDetail";
 const MealShowcase = () => {
     const [recipes, setRecipes] = useState([]);
-
-
+    
+    
 
     useEffect(() => {
 
