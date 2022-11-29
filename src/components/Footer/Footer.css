@@ -1,0 +1,71 @@
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 4px;
+    padding: 4px;
+}
+
+.codeIcon {
+    padding: 2px;
+    margin-right: 1em;
+    margin-top: 8px;
+    height: 22px;
+    width: 22px;
+    position: relative;
+    top: 6px;
+}
+
+.reactIcon {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 6px;
+}
+
+.coffeIcon {
+    position: relative;
+    top: 14px;
+    
+}
+.loveIcon {
+    position: relative;
+    top: 4px;
+    margin-left: 8px;
+}
+.footerDesign {
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+
+}
+
+.footerLeft {
+
+    padding: 1em;
+    margin-left: 2em;
+    text-align: justify;
+
+}
+
+.down-text {
+    margin: 0;
+}
+
+.footerRight {
+    margin-right: 2em;
+    padding: 1em;
+    text-align: end;
+}
+
+.text-right {
+    margin: 0;
+}
+
+.upper-text {
+    font-size: 16px;
+}
+
+.bottom-text {
+    font-size: 22px;
+}

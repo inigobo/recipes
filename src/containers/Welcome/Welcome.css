@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+
 }
 
 h1,h2,h3 {
@@ -39,6 +40,7 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
     filter: blur(5.5px) contrast(1.35) brightness(0.65);
+    overflow-y: hidden;
    
 }
 
