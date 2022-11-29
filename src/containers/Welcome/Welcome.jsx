@@ -14,7 +14,7 @@ const Welcome = () => {
             <h2>Live Well</h2>
           </div>
           <div className="right-text">
-            <h3>
+            <h3 className="h3-text">
               Eating healthy is important for everyone especially teens. A
               healthy diet is the key to being fit. It is unlike any diet. You
               will feel so pure, balanced, and alert. It even prevents some

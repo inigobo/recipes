@@ -54,7 +54,7 @@ const RegisterCard = () => {
         <div className="registerCardDesign">
             {/* <pre>{JSON.stringify(user, null, 2)}</pre> */}
             <div className="registerCardUp">
-                <p>Fill the form to add your recepies!</p>
+                <p className='form-text'>Fill the form to add your recepies!</p>
                 <img className="logoDesign" src={logo}/>
             </div>
             <form onSubmit={handleSaveToPC} className="registerCardMiddle">
