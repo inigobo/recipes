@@ -1,38 +1,35 @@
 import React from "react";
-import { bringRandomRecipe } from "../../services/apiCalls";
+import { bringAllRecipes, bringRandomRecipe } from "../../services/apiCalls";
 import { useState, useEffect } from "react";
-import MealDetail from "../../components/MealDetail/MealDetail";
+import MealCard from "../../components/MealCard/MealCard";
 const MealShowcase = () => {
+    //const [recipes, setRecipes] = useState(require('../../Assets/recipes-sample.json'));
     const [recipes, setRecipes] = useState([]);
-    
-    
+
+
 
     useEffect(() => {
 
         if (recipes.length === 0) {
 
-            for (let i = 0; i < 9; i++) {
-                bringRandomRecipe()
+
+                bringAllRecipes()
                     .then(
                         res => {
-
                             //we store the results at the hook...
-
-                            setRecipes((prevRecipes) => {
-                                return [res.data.results, ...prevRecipes]
-                            }
-
-                            )
+                            setRecipes(res)
                         }
                     )
                     .catch(error => console.log(error));
-            }
+
         }
     }, [recipes])
+    console.log("Showing all...")
     console.log(recipes);
 
     return (
         <div className='showcaseDesign'>
+            <h3>Meal showcase</h3>
             <div className='recipeWrap'>
                 {
                     recipes.length > 0 &&
@@ -41,8 +38,7 @@ const MealShowcase = () => {
                         recipe => {
                             return (
 
-                                <MealDetail value={recipe} key={recipe.id} />
-                
+                                <MealCard value={recipe} key={recipe.meals[0].idMeal} />
 
                             )
                         }

@@ -1,5 +1,20 @@
-.showcaseDesign{
+.showcaseDesign {
+
+    height: 100vh;
+    width: 100vw;
+
+    background-color: darkcyan;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    
+}
+
+.recipeWrap {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
