@@ -21,6 +21,8 @@ export const errorCheck = (type,value) => {
 
             if(value.length < 12){
                 return "That can't be it... Don't be shy, write some more!"
+
+                break;
             } else {
                 if (!/^[a-zA-Z0-9]+$/.test(value) ) {
                     return "Invalid format, only normal characters and numbers allowed!";

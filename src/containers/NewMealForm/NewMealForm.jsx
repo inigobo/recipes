@@ -4,6 +4,7 @@ import "./NewMealForm.css";
 
 const Register = () => {
 
+
     return (
         <div className='registerDesign'>
             <RegisterCard />

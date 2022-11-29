@@ -40,6 +40,16 @@ const RegisterCard = () => {
 
     }
 
+    const handleSaveToPC = (jsonData,filename) => {
+        const fileData = JSON.stringify(jsonData);
+        const blob = new Blob([fileData], {type: "text/plain"});
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.download = `${filename}.json`;
+        link.href = url;
+        link.click();
+      }
+
     return (
         <div className="registerCardDesign">
             {/* <pre>{JSON.stringify(user, null, 2)}</pre> */}
@@ -47,7 +57,7 @@ const RegisterCard = () => {
                 <p>Fill the form to add your recepies!</p>
                 <img className="logoDesign" src={logo}/>
             </div>
-            <div className="registerCardMiddle">
+            <form onSubmit={handleSaveToPC} className="registerCardMiddle">
                 {/* Here were are going to operate with inputs... */}
                 <input placeholder="Recepie Name" type="text" name="recepieName" className="basicInput" onChange={(e)=>inputHandler(e)} onBlur={(e)=>errorHandler(e)}/>
                 <div className='errorMsg'>{userError.recepieNameError}</div>
@@ -60,7 +70,7 @@ const RegisterCard = () => {
                 
                 <input placeholder="Link a video of the preparation!" type="url" name="video" className="basicInput" onChange={(e)=>inputHandler(e)} onBlur={(e)=>errorHandler(e)}/>
                 <div className='errorMsg'>{userError.videoError}</div>
-            </div>
+            </form>
             <div className="registerCardBottom">
                 <div onClick={() => alert('Form submitted succesfully!')} className='submit-button'>Submit</div>
             </div>
