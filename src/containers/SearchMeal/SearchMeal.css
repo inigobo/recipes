@@ -1,8 +1,9 @@
 .searchPage {
     display: flex;
     flex-direction: column;
-    background-color: whitesmoke; 
-    height: 100vh;
+    background: #FF8008;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFC837, #FF8008);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFC837, #FF8008);    height: 100vh;
     overflow-x: hidden;
     width: 100%;
 
@@ -18,12 +19,14 @@
     height: 2.5em;
     border: 2px solid lightslategrey;
     
+    
 }
 
 .leftside{
     display: flex;
     justify-content: center;
     align-items: center;
+    
     
 }
 
@@ -34,8 +37,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: whitesmoke; 
     margin-top: 3em;
+
+
 }
 
 .movieSmallImage{
