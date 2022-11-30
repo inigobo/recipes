@@ -15,7 +15,7 @@ const Header = () => {
             <div className="rightside">
             <div className="linkDesign" onClick={()=>setTimeout(()=>{navigate("/mealshowcase")},500)}>Meals ShowCase</div>
             <div className="linkDesign" onClick={()=>setTimeout(()=>{navigate("/newmealform")},500)}>Add Your Meal</div>
-            <div className="linkDesign" onClick={()=>setTimeout(()=>{navigate("/search")},500)}>Search Your Meal</div>
+            <div className="linkDesign" onClick={()=>setTimeout(()=>{navigate("/searchmeal")},500)}>Search Your Meal</div>
             </div>
     </div>
     )

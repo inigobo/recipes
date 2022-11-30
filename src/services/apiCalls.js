@@ -2,9 +2,9 @@ import axios from "axios";
 
 const API_ROOT = "https://www.themealdb.com/api/json/v1/1";
 
-export const bringBySearch = (search) => {
+export const bringBySearch = (searchInput) => {
     return axios
-        .get(`${API_ROOT}/search.php?s=${search}`)
+        .get(`${API_ROOT}/search.php?s=${searchInput}`)
         .then((response) => {
             return response.data.meals;
         })

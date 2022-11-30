@@ -1,0 +1,66 @@
+.searchPage {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke; 
+    height: 100vh;
+    overflow-x: hidden;
+    width: 100%;
+
+}
+.searchBar {
+    display: flex;
+}
+.searchInput {
+    display: flex;
+    margin-top: 2em;
+    width: 24em;
+    border-radius: 8px;
+    height: 2.5em;
+    border: 2px solid lightslategrey;
+    
+}
+
+.leftside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.searchResults {
+    width: 72vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: whitesmoke; 
+    margin-top: 3em;
+}
+
+.movieSmallImage{
+    width: 10em; 
+}
+
+.movieCard{
+    width: 12em;
+    margin-top: 0.5em;
+    cursor:pointer;
+}
+
+
+.clickMovie {
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    width: 30vw;
+    margin-top: 1em;
+
+}
+
+.showContainer {
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+
+}
