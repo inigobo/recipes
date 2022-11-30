@@ -6,7 +6,7 @@ export const bringBySearch = (search) => {
     return axios
         .get(`${API_ROOT}/search.php?s=${search}`)
         .then((response) => {
-            return response.data;
+            return response.data.meals;
         })
         .catch((e) => console.error(e));
 
@@ -16,7 +16,7 @@ export const bringAllRecipes = () => {
     return axios
         .get(`${API_ROOT}/search.php?s=`)
         .then((response) => {
-            return response.data;
+            return response.data.meals;
         })
         .catch((e) => console.error(e));
 
@@ -26,7 +26,7 @@ export const bringCategories = () => {
     return axios
         .get(`${API_ROOT}/list.php?c=list`)
         .then((response) => {
-            return response.data;
+            return response.data.meals;
         })
         .catch((e) => console.error(e));
 

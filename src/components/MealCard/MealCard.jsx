@@ -1,13 +1,15 @@
 import React from 'react'
 import './MealCard.css'
 
-const MealCard = ({meal}) => {
+const MealCard = (props) => {
     return (
         <div className='mealCardDesign'>
-            <h3>{meal.strMeal}</h3>
-            <h3>{meal.strCategory}</h3>
-            <h3>{meal.strArea}</h3>
-            {/* <img className='detailPic' alt={meal.strMeal} src={meal.strMealThumb}></img> */}
+            <div className='mealCardTitle'>{props.value.strMeal}</div>
+            <img className='detailPic' alt={props.value.strMeal} src={props.value.strMealThumb}></img>
+            <div className='mealCardInfo'>
+                <div className='cardInfo'>{props.value.strCategory}</div>
+                <div className='cardInfo'>{props.value.strArea}</div>
+            </div>
         </div>
     )
 }

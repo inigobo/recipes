@@ -1,9 +1,6 @@
 .showcaseDesign {
 
-    height: 100vh;
-    width: 100vw;
-
-    background-color: darkcyan;
+    background-color: rgb(243, 234, 191);
 
     display: flex;
     flex-direction: column;
@@ -12,10 +9,17 @@
     
 }
 
-.recipeWrap {
+.showcaseTitle {
+    color:black;
+    font-size: 100px;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
 }
 
+.recipeWrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
